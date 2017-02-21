@@ -15,7 +15,8 @@ body {
 
     /* DO NOT CHANGE THESE */
     background-color: #444444;
-    height: 200px;
+    display: flex;
+    height: 150px;
 }
 .hero h1 {
 
@@ -23,17 +24,18 @@ body {
     color: #ffffff;
 }
 
-.hero ul {
-  justify-content: flex-end;
-}
-
 
 .posts {
 
     /* DO NOT CHANGE THESE */
     color: #444444;
-    height: 100px;
-    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em;
+
+    display: flex;
+    flex: 1 0 25%;
 
 }
 .posts article {
@@ -42,6 +44,10 @@ body {
     background-color: #dddddd;
     border: 1px solid #444444;
     height: 20em; /* this is just so we can see the articles since they have no content */
+    flex: 0 0 45%;
+    margin: 1em;
+
+
 }
 
 
@@ -50,8 +56,13 @@ body {
     /* DO NOT CHANGE THESE */
     background-color: #aaaaaa;
     color: #444444;
-    height: 100px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3em;
+    flex: 0 0 25%;
+
 }
 
 .sidebar section {
@@ -61,6 +72,11 @@ body {
     background-color: #dddddd;
     border: 1px solid #444444;
     height: 10em; /* this is just so we can see the articles since they have no content */
+    width: 85%;
+    flex-grow: 0;
+    margin-top: 2em;
+
+
 }
 
 
@@ -69,4 +85,22 @@ footer {
     /* DO NOT CHANGE THESE */
     background-color: #444444;
     color: #eeeeee;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero ul {
+  list-style: none;
+  display: flex;
+}
+
+.hero li {
+  margin-right: 1em;
+}
+
+footer p {
+  display: flex;
 }
