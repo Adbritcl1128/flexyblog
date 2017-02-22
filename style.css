@@ -17,13 +17,21 @@ body {
     background-color: #444444;
     display: flex;
     height: 150px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .hero h1 {
 
     /* DO NOT CHANGE THESE */
     color: #ffffff;
+    margin-left: 2em;
 }
 
+.hero nav {
+    align-self: flex-end;
+    margin-bottom: 1em;
+}
 
 .posts {
 
@@ -101,6 +109,7 @@ footer {
   margin-right: 1em;
 }
 
-footer p {
+p {
   display: flex;
+  justify-content: flex-end;
 }
